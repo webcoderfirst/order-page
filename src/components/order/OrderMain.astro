@@ -1,0 +1,68 @@
+<div class="flex justify-center w-full h-11/14 @sm:h-8/14">
+  <div class="flex justify-between w-17/20 <md:flex-col <md:items-center">
+
+    <div class="w-9/20 flex flex-col justify-center h-4/5 m-0 p-0 <md:w-screen <md:items-center">
+      <h2 class="text-3xl font-bold mb-20px coloumns-2 select-none <md:text-4xl">
+        Aktual IT sohalarini biz bilan o'rganing!
+      </h2>
+
+      <select
+        class="appearance-none coloumns-2 w-2/5 text-xl rounded-md 
+        px-10px py-5px mt-10px border-1 border-black border-opacity-40
+        <md:w-3/5 <md:text-2xl"
+        name="{name}"
+      >
+        <option class="<md:w-3/5" selected disabled>Kursni tanlang</option>
+        <option class="<md:w-3/5" value="{frontend}">Frontend</option>
+        <option class="<md:w-3/5" value="{backend}">Backend</option>
+        <option class="<md:w-3/5" value="{itStart}">IT start</option>
+      </select>
+
+      <form class="flex flex-col mt-10px <md:w-full <md:items-center">
+        <label class="text-xl <md:text-2xl <md:w-3/5 <md:flex <md:justify-start">Ma'lumotlaringizni kiriting:</label>
+        <input
+          class="mt-10px border-1 border-black border-opacity-40 w-7/10 
+          px-10px py-5px rounded <md:w-3/5 <md:text-2xl"
+          type="text"
+          name="{name}"
+          placeholder="Ismingiz"
+        />
+        <input
+          class="mt-10px border-1 border-black border-opacity-40 w-7/10 
+          px-10px py-5px rounded <md:w-3/5 <md:text-2xl appearance-none"
+          type="number"
+          name="{tel}"
+          placeholder="Telefon raqamingiz"
+        />
+        <textarea
+          class="mt-10px border-1 resize-none border-black border-opacity-40 
+          w-7/10 h-[120px] px-10px py-5px rounded appearance-none <md:w-3/5 <md:text-2xl"
+          name="{message}"
+          placeholder="Xabar"></textarea>
+        <a href="/answer"
+          class="w-7/10 py-5px mt-10px btn-blue ml-0 <md:w-3/5"
+          type="button">Yuborish</a 
+        >
+      </form>
+    </div>
+
+    <div class="w-9/20 h-4/5 select-none <md:h-0">
+      <img class="h-full w-full" src="../././img/Content.png" alt="" />
+    </div>
+  </div>
+</div>
+
+<style>
+  @import '../base/base.css';
+  @import 'https://kit.fontawesome.com/d0083e63da.js';
+  form input::-webkit-outer-spin-button,
+  form input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+  select {
+    background-image: url('../././img/down.png');
+    background-repeat: no-repeat;
+    background-position: 95%;
+  }
+</style>
